@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
 body{
     font-family: "Inter", sans-serif;
-     background-color: rgba(0, 0, 0, 0.932)
-     ;
+     background-color: rgba(0, 0, 0, 0.932);
 }
 *{
     margin: 0;
@@ -75,10 +74,14 @@ padding: 8px 20px 8px 20px;
     color: rgb(255, 255, 255);
 font-size: 4.8rem;
 font-weight: 900;
-/* line-height: 120%; */
+ line-height: 120%;
 }
-.change-write{
-   font-family: "Dancing Script", cursive;
+#change-write{
+    font-family: 'Miama', sans-serif;
+    font-size: 9rem;
+    font-weight: 400;
+    line-height: -0%;
+                                                
 }
 
 .banner-content p{
@@ -199,8 +202,47 @@ font-weight: 400;
     display: none;
 }
 
+/* 2nd section habit style */
+.habits-section{
+    text-align: center;
+    margin-top: 100px;
+}
 
+.habits-section h2{
+    color: rgb(255, 255, 255);
+font-size: 2.7rem;
+font-weight: 900;
+}
 
+.habits-section p{
+    color: rgba(255, 255, 255, 0.5);
+font-size: 0.9rem;
+font-weight: 400;
+margin-top: 14px;
+margin-bottom: 54px;
+}
+.habit-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+.habit-img img{
+    border-radius: 50%;
+    width: 70%;
+    margin-bottom: 20px;
+}
+.habit-img h4{
+    color: rgb(255, 255, 255);
+font-family: Inter;
+font-size: 1.02rem;
+font-weight: 600;
+
+}
+.habit-img p{
+    color: rgba(255, 255, 255, 0.5);
+font-size: 0.9rem;
+font-weight: 400;
+}
 
 
 
@@ -230,16 +272,17 @@ font-weight: 400;
    }
    .banner-content h1{
     font-size: 1.9rem;
+    line-height: 130%;
    }
    .banner-content p{
     font-size: 0.9rem;
    }
    .btn-primary{
-     padding: 18px 25px;
+     padding: 18px 22px;
     font-size: 0.9rem;
    }
    .btn-secondary{
-    padding: 18px 25px;
+    padding: 18px 22px;
     font-size: 0.9rem;
    }
 
@@ -287,6 +330,10 @@ color: rgb(230, 83, 60);
 margin-right: 15px;
 margin-top: 8px;
 
+}
+#change-write{
+ font-size: 4rem;
+ 
 }
 
 }
