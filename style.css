@@ -192,3 +192,101 @@ font-size: 0.9rem;
 font-weight: 400;
 
 }
+.ham-burger{
+    display: none;
+}
+.play-color{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* responsive style for small device  */
+
+@media screen and (max-width: 576px) {
+    .nav-options, .circle-color{
+        display: none;
+    }
+    .ham-burger, .play-color{
+        display: block;
+
+    }
+    .ham-burger i{
+        color:white;
+        font-size: 26px;
+    }
+   .container{
+    margin: 2rem 20px;
+   }
+   .banner{
+    flex-direction: column;
+   }
+   .banner-content h1{
+    font-size: 1.9rem;
+   }
+   .banner-content p{
+    font-size: 0.9rem;
+   }
+   .btn-primary{
+     padding: 18px 25px;
+    font-size: 0.9rem;
+   }
+   .btn-secondary{
+    padding: 18px 25px;
+    font-size: 0.9rem;
+   }
+
+   .banner-profile-pic{
+     position: relative;
+     margin-top: 48px;
+   }
+   .text-overlay-1{
+    position: absolute;
+    bottom: 35% ;    
+    left: 26%;
+    transform: translate(-50%, -50%);   
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 0.9rem;
+
+/* padding: 18px 15px; */
+backdrop-filter: blur(10px);
+background: rgba(48, 48, 48, 0.54);
+   }
+   .text-overlay-2{
+    position: absolute;
+    top: 15%;
+    right: -20%;
+    transform: translate(-50%, -50%);   
+    color: rgb(255, 255, 255);
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 0.9rem;
+padding: 16px 15px;
+backdrop-filter: blur(10px);
+background: rgba(48, 48, 48, 0.54);
+
+}
+.text-overlay-2 h3{
+    font-size: 1.8rem;
+}
+
+.text-overlay-2 p{
+    font-size: 0.7rem;
+}
+.play-color i{
+    font-size: 2rem;
+color: rgb(230, 83, 60);
+margin-right: 15px;
+margin-top: 8px;
+
+}
+
+}
