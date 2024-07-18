@@ -272,6 +272,8 @@ margin-bottom: 40px;
 }
 .run-img{
     width: 35%;
+    /* width: 366px;
+height: 312px; */
 }
 
 .run-img img{
@@ -279,6 +281,122 @@ margin-bottom: 40px;
     height: 100%;
     border-radius: 1.01rem;
 }
+.bmi-section{
+    margin-top: 100px;
+    background-color: rgb(34, 34, 34);
+    padding: 10px 0;
+    
+
+}
+.join-section{
+    text-align: center;
+    margin-top: 100px;
+}
+.join-section h2{
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    font-weight: 900;
+
+}
+.join-section p{
+    color: rgba(255, 255, 255, 0.5);
+font-size: 0.9rem;
+font-weight: 400;
+margin-top: 14px;
+margin-bottom: 80px;
+}
+.bmi-table{
+    width: 40%;
+}
+.bmi-table h3{
+    color: rgb(255, 255, 255);
+font-size: 1.6rem;
+font-weight: 800;
+margin-bottom: 50px;
+text-align: left;
+}
+.bmi-table table{
+    width: 310px;
+height: 216px;
+border-collapse: collapse;
+/* border: 1px solid rgb(103, 101, 101); */
+box-shadow: 0 2px 4px rgba(72, 71, 71, 0.1);
+
+}
+.bmi-table thead{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+font-weight: 500;
+}
+.bmi-table th,td{
+    padding: 10px;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.186);
+   
+
+}
+.bmi-table td{
+    color: rgba(255, 255, 255, 0.5);
+font-size: 0.9rem;
+font-weight: 400;
+}
+
+.bmi-calculation{
+    width: 50%;
+    
+    
+}
+.bmi-display{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+  
+}
+
+.bmi-calculation{
+text-align: start;
+
+}
+.bmi-calculation h3{
+    color: rgb(255, 255, 255);
+font-size: 1.7rem;
+font-weight: 800;
+text-align: left;
+}
+.bmi-calculation p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    text-align: left;
+    margin-top: 20px;
+}
+.bmi-input{
+    margin-top: 32px;
+
+}
+.bmi-input input, select{
+     margin: 5px auto;
+    border-radius: .5rem;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+font-size: 1rem;
+font-weight: 400;
+padding: 12px 40px 12px 20px;
+margin-right: 10px;
+
+background: rgba(255, 255, 255, 0.1);
+
+    
+  }
+  .select-field-1{
+    width: 227px;
+     height: 45px;
+  }
+
+  .select-field-2{
+    width: 470px;
+    height: 45px;
+margin-bottom: 15px;
+  }
 
 
 
