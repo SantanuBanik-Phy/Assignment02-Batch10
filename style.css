@@ -17,7 +17,6 @@ body{
 
 /* start nav section style */
 header{
-    /* background-image: linear-gradient(0deg, rgb(41, 39, 39),rgba(0, 0, 0, 0) 100%); */
     background: radial-gradient(90.77% 50.77% at 90% 53%,rgba(59, 59, 59, 0.48),rgba(0, 0, 0, 0) 100%),radial-gradient(70.88% 36.72% at 31% 46%,rgba(55, 55, 55, 0.5),rgba(60, 60, 60, 0) 100%);
     
 } 
@@ -124,6 +123,7 @@ cursor: pointer;
 }
 .banner-profile-pic img{
     width: 100%;
+    object-fit: cover;
     
 }
 .banner-profile-pic{
@@ -230,6 +230,7 @@ margin-bottom: 54px;
     border-radius: 50%;
     width: 70%;
     margin-bottom: 20px;
+    object-fit: cover;
 }
 .habit-img h4{
     color: rgb(255, 255, 255);
@@ -279,6 +280,7 @@ margin-bottom: 40px;
     width: 100%;
     height: 100%;
     border-radius: 1.01rem;
+    object-fit: cover;
 }
 /* end third run section style */
 
@@ -624,7 +626,7 @@ font-weight: 700;
 .pricing-range .btn-primary{
     padding: 10px 35px 10px 35px;
     box-sizing: border-box;
-border: 2px solid rgb(255, 255, 255);
+border: 1.3px solid rgb(255, 255, 255);
 font-size: 0.9rem;
 font-weight: 400;
 background-color: rgb(255, 61, 0);
@@ -680,7 +682,6 @@ background: rgba(86, 86, 86, 0.8);
 
 }
 
-
 .row-2{
     display: grid;
     grid-template-columns: 1.3fr 0.7fr 1fr;
@@ -703,17 +704,41 @@ background: rgba(86, 86, 86, 0.8);
       font-size: 1.4rem;
       font-weight: 600;
 }
-.card-2{
-    filter: grayscale(50%) sepia(90%) hue-rotate(-45deg) saturate(250%) contrast(75%);
+.card-2::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0.3);
 }
-.card-1{
-    filter: sepia(80%) hue-rotate(120deg) saturate(180%) contrast(75%);
+.card-1::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 255, 209, 0.482); 
 }
-.card-5{
-    filter: grayscale(100%) sepia(70%) hue-rotate(60deg) saturate(220%) contrast(70%);
+.card-5::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(68, 255, 0, 0.281); 
 }
-.card-6{
-    filter:
+.card-6::after {
+    content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 71, 255, 0.3); 
 }
 .card-3{
     filter: brightness(70%);
@@ -789,9 +814,9 @@ background: rgba(86, 86, 86, 0.8);
    .text-overlay-2{
     position: absolute;
     top: 15%;
-    right: -20%;
+    right: -17%;
     transform: translate(-50%, -50%);   
-    padding: 14px 12px;
+    padding: 15px 20px;
 
 }
 .text-overlay-2 h3{
@@ -830,7 +855,7 @@ border-radius: 50%;
     margin-top: 30px;
 } 
 .run-section{
-  padding: 30px;
+  padding: 25px;
 }
 .run-content{
     width: 100%;
@@ -840,8 +865,10 @@ border-radius: 50%;
     font-size: 2rem;
 }
 .run-content .btn-primary{
-    padding: 14px 110px;
-    font-size: 0.8rem;
+    width: 300px;
+   height: 54px;
+    font-size: 1.2rem;
+    
    
 }
 
@@ -918,3 +945,128 @@ margin-top: 25px;
 
 
 }
+
+
+/* responsive for medium device */
+@media screen and (min-width: 576px) and (max-width:992px){
+  
+
+    .container{
+        margin: 2rem 30px;
+       }
+       .banner, .bmi-display, .footer-list{
+        flex-direction: column;
+       }
+       .banner-content h1{
+        font-size: 3.5rem;
+        line-height: 130%;
+       }
+       .banner-content p{
+        font-size: 1rem;
+       }
+     
+    
+    .banner-profile-pic{
+         position: relative;
+         margin-top: 48px;
+    }
+    .banner-profile-pic img{
+      width: 100%;
+    }
+    .text-overlay-1{
+        position: absolute;
+        bottom: 35% ;    
+        left: 20%;
+        transform: translate(-50%, -50%);   
+        padding: 20px 20px; 
+    }
+       .text-overlay-2{
+        position: absolute;
+        top: 15%;
+        right: 15%;
+        transform: translate(-50%, -50%);   
+        padding: 20px 30px;
+    
+    }
+   
+    .habit-content{
+        grid-template-columns:repeat(2, 1fr);
+    }
+    
+    .text-overlay-2 p{
+        font-size: 0.7rem;
+    }
+   
+    #change-write{
+     font-size: 7rem;
+    }
+  
+    .run-content .btn-primary{
+        padding: 14px 90px;
+        font-size: 0.9rem;
+       
+    }
+    
+    .bmi-calculation{
+        width: 100%;
+        height: 100%;
+        margin-top: 25px;
+    }
+    .bmi-table{
+        width: 100%;
+        height: 100%;  
+    }
+    .bmi-input input, select{
+        width: 41%;
+        
+    }
+    .select-field-1{
+        width: 48%;
+    }
+    .select-field-2{
+        width: 98%;
+    }
+    
+    
+    .team-img{
+        width: 92%;
+    }
+    .team-img h4{
+        position: absolute;
+        bottom:8%;
+        left: 25%;
+        
+    }
+    
+    .footer-content-2{
+        width: 90%;
+       padding-left: 0px;
+    margin-left: -35px;
+    text-align: start;
+    margin-top: 25px;
+    }
+    .footer-content-2 ul li{
+        line-height: 200%;
+    }
+    #line-2{
+        margin: 0 25px;
+    }
+    .price-content h2{
+        font-size: 2rem;
+    
+    }
+    .price-content p{
+        font-size: 0.8rem;
+    }
+    .btn-container{
+        width: 97%;
+    }
+    .excercise-section img{
+        height: 170px;
+    }
+    .trainer-card p{
+        font-size: 0.9rem;
+    } 
+    
+
+    }
