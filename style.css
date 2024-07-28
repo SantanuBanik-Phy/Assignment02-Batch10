@@ -865,8 +865,9 @@ border-radius: 50%;
     font-size: 2rem;
 }
 .run-content .btn-primary{
-    width: 300px;
-   height: 54px;
+
+    width: 100%;
+
     font-size: 1.2rem;
     
    
