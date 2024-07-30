@@ -777,8 +777,8 @@ background: rgba(86, 86, 86, 0.8);
     flex-direction: column;
    }
    .banner-content h1{
-    font-size: 1.9rem;
-    line-height: 130%;
+    font-size: 3.5rem;
+    line-height: 115%;
    }
    .banner-content p{
     font-size: 0.8rem;
@@ -804,18 +804,17 @@ background: rgba(86, 86, 86, 0.8);
     bottom: 35% ;    
     left: 26%;
     transform: translate(-50%, -50%);   
-    padding: 15px 10px; 
+    padding: 17px 13px; 
 }
    .text-overlay-2{
     position: absolute;
     top: 15%;
-    right: -17%;
-    transform: translate(-50%, -50%);   
-    padding: 15px 20px;
+    right: -23%; 
+    padding: 16px 20px;
 
 }
 .text-overlay-2 h3{
-    font-size: 1.8rem;
+    font-size: 1.9rem;
 }
 .habit-content, .team-content, .pricing-grid{
     grid-template-columns: 1fr;
@@ -834,7 +833,7 @@ border-radius: 50%;
 
 }
 #change-write{
- font-size: 4rem;
+ font-size: 6rem;
  
 }
 .habits-section h2{
@@ -857,7 +856,7 @@ border-radius: 50%;
     height: 100%;
 }
 .run-content h2{
-    font-size: 2rem;
+    font-size: 2.8rem;
 }
 .run-content .btn-primary{
 
@@ -914,7 +913,7 @@ margin-top: 25px;
     margin: 0 25px;
 }
 .price-content h2{
-    font-size: 2rem;
+    font-size: 2.2rem;
 
 }
 .price-content p{
