@@ -781,14 +781,14 @@ background: rgba(86, 86, 86, 0.8);
     line-height: 115%;
    }
    .banner-content p{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
    }
    .banner .btn-primary{
-     padding: 18px 22px;
+     padding: 17px 25px;
     font-size: 0.9rem;
    }
 .btn-secondary{
-    padding: 16px 22px;
+    padding: 16px 25px;
     font-size: 0.9rem;
 }
 
@@ -874,14 +874,14 @@ border-radius: 50%;
     height: 100%;  
 }
 .bmi-input input, select{
-    width: 29%;
+    width: 27.8%;
     
 }
 .select-field-1{
     width: 46%;
 }
 .select-field-2{
-    width: 96%;
+    width: 97%;
 }
 
 
@@ -1009,14 +1009,14 @@ margin-top: 25px;
         height: 100%;  
     }
     .bmi-input input, select{
-        width: 41%;
+        width: 40%;
         
     }
     .select-field-1{
-        width: 48%;
+        width: 47.8%;
     }
     .select-field-2{
-        width: 98%;
+        width: 97.5%;
     }
     
     
