@@ -380,10 +380,12 @@ background: rgba(255, 255, 255, 0.1);
 }
 .select-field-1{
     width: 41%;
+    height: 45px;
 }
 
 .select-field-2{
     width: 84%;
+    height: 45px;
 margin-bottom: 15px;
 }
 /* end fifth bmi section style */
